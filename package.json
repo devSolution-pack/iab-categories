@@ -1,6 +1,6 @@
 {
   "name": "iab-categories",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "List of IBA categories with code",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
