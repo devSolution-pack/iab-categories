@@ -1,8 +1,6 @@
 import category from './category.json';
 import {ICategory} from "./types";
 
-console.log(category)
-
 export const findCategoryById = (categoryId: string): ICategory | undefined => {
     return category.find(c => c.id === categoryId)
 }
