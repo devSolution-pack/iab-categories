@@ -10,8 +10,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devSolution-pack/iab-categories"
+  },
   "keywords": ["categories","IAB",""],
-  "author": "",
+  "author": "Elias Sallom",
   "license": "ISC",
   "dependencies": {
     "typescript": "^5.0.4"
