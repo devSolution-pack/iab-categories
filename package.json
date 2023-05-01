@@ -1,6 +1,6 @@
 {
   "name": "iab-categories",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "List of IBA categories with code",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,6 +11,7 @@
     "type": "git",
     "url": "https://github.com/devSolution-pack/iab-categories"
   },
+  "files": ["dist"],
   "keywords": ["categories","IAB",""],
   "author": "Elias Sallom",
   "license": "ISC",
