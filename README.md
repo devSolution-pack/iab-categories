@@ -1,2 +1,3 @@
 # iab-categories
-List of IBA categories with code 
+List of IBA categories with code
+
