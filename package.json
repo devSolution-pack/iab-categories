@@ -1,18 +1,39 @@
 {
   "name": "iab-categories",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "List of IBA categories with code",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "./dist/cjs/types/index.d.ts",
+  "main": "./dist/cjs/index.js",
   "scripts": {
-    "build": "rm -rf dist/ && npx tsc "
+    "clean": "rm -rf ./dist",
+    "build:esm": "tsc -p ./configs/tsconfig.esm.json && mv dist/esm/index.js dist/esm/index.mjs",
+    "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
+    "build": "npm run clean && npm run build:esm && npm run build:cjs"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/devSolution-pack/iab-categories"
   },
-  "files": ["dist"],
-  "keywords": ["categories","IAB","list"],
+  "files": [
+    "dist/**/*"
+  ],
+  "keywords": [
+    "categories",
+    "IAB",
+    "list"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/types/index.d.ts",
+        "default": "./dist/esm/index.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/types/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    }
+  },
   "author": "Elias Sallom",
   "license": "ISC",
   "dependencies": {
