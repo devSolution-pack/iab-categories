@@ -8,9 +8,14 @@ Based on the IAB Tech Lab Content Taxonomy, the categories are defined under two
 ### How to use 
 in the package there is 4 function
 ```ecmascript 6
-findCategoryById("IAB1")
+getAllCategories() // return all the categories 
+getAllCategoriesIds() // return all the categories parents ID
+getAllCategoriesNames() // return all the categories parents names
+
 ```
-> the return value will be the code below 
+```ecmascript 6
+findCategoryById("IAB1") // return all the categories children object
+```
 ```ecmascript 6
 {
     id: "IAB1"
@@ -18,9 +23,11 @@ findCategoryById("IAB1")
     chilled: Array(7)
 }
 ```
+### Issues
+please open issue in GitHub repo to fix it [URL](https://github.com/devSolution-pack/iab-categories/issues)
 
 ### Note 
-the package worked with typescript and javascript in the same time 
+the package worked with `typescript` and `javascript`
 
-created by @Eliassallom
+created by [Eliassallom](https://github.com/EliasSalom)
 
