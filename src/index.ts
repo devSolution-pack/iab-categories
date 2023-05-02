@@ -13,3 +13,4 @@ export const getAllCategoriesIds = (): Array<string> => {
 export const getAllCategoriesNames = (): Array<string> => {
     return category.map(c => c.name)
 }
+
